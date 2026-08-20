@@ -1,0 +1,33 @@
+# Copy this file into your tracking folder as ".gitattributes" (note the
+# leading dot, no .template extension).
+#
+# Why this file matters: Git normally "helps" by converting line endings in
+# text files. Applied to binary files (images, sounds, archives) that
+# conversion silently CORRUPTS them. The lines below tell Git which file
+# types are binary and must never be touched.
+
+# Treat everything else as text with Windows line endings.
+* text eol=crlf
+
+# Binary formats - must never go through line-ending conversion.
+*.brarchive binary
+*.nbt binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.tga binary
+*.fsb binary
+*.ogg binary
+*.webm binary
+*.ttf binary
+*.otf binary
+*.fontdata binary
+*.hdr binary
+*.dat binary
+*.mcstructure binary
+
+# Extract-Brarchives.ps1 automatically maintains an extra block below this
+# file's contents for individual binary .json files (compiled "MCB" files
+# that could not be converted back to readable JSON). Do not edit that block
+# by hand; the script rewrites it on every run.

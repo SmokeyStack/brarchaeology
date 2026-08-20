@@ -1,0 +1,17 @@
+# Copy this file into your tracking folder as ".gitignore" (note the leading
+# dot, no .template extension).
+#
+# These entries keep downloaded tools and generated helper data out of your
+# version history. They are re-downloadable and machine-specific, so they do
+# not belong in the repository.
+
+# Downloaded executables (brarchive-cli.exe, etc.)
+tools/*.exe
+
+# The brarchive-extractor build (cloned + built locally)
+tools/brax/
+
+# Note: tools/bds-schema/ (the schemas dumped from the Bedrock Dedicated
+# Server) is deliberately NOT ignored. Tracking it keeps each snapshot paired
+# with the exact schemas that decoded it, and schema diffs often reveal new
+# game features before any content uses them.
