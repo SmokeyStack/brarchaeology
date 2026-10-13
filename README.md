@@ -131,7 +131,9 @@ C:\minecraft-tracking\
 
 > **If PowerShell refuses to run scripts** ("running scripts is disabled"),
 > run this once in PowerShell 7 and answer Yes:
-> `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`
+> ```powershell
+> Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+> ```
 
 ---
 
